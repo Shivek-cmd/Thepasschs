@@ -1,36 +1,144 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Pass CHS — Website
 
-## Getting Started
+Production website for **The Pass — Artisan Deli & Market**, Charleston, SC.
 
-First, run the development server:
+Built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion.
+
+---
+
+## 🚀 Deploy to Vercel (3 steps)
+
+1. Push this repo to GitHub
+2. Go to [vercel.com](https://vercel.com) → Import Git Repository → select your repo
+3. Vercel auto-detects Next.js — click **Deploy**
+
+**One environment variable to add in Vercel dashboard:**
+```
+NEXT_PUBLIC_SITE_URL=https://thepasschs.com
+```
+> GTM: Replace `GTM-XXXXXXX` in `.env.local` with your real GTM container ID before deploying.
+
+---
+
+## 🛠 Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+```
+app/                    # Next.js App Router pages
+  layout.tsx            # Root layout — fonts, SEO, theme script
+  page.tsx              # Homepage
+  menu/                 # Full menu (tabbed: Panino, Salads, Snacks, Drinks)
+  catering/             # Catering packages + inquiry form
+  the-italian-boy/      # The Italian Boy After Dark page
+  blog/                 # Blog listing + [slug] post pages
+  sitemap.ts            # Auto-generated sitemap
+  robots.ts             # Robots.txt
 
-To learn more about Next.js, take a look at the following resources:
+components/
+  layout/               # Navbar, Footer
+  sections/             # Hero, VibeStrip, SignatureDishes, Story,
+                        # MaseratiMoment, PressMarquee, ItalianBoyTeaser,
+                        # Testimonials, Locations
+  ui/                   # AnimatedSection, Counter, ThemeToggle,
+                        # MagneticButton, ScrollProgress, Breadcrumb
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+content/blog/           # MDX blog posts (add new .mdx files here)
+constants/index.ts      # ALL site data — locations, links, press, stats
+lib/
+  mdx.ts                # Blog utilities
+  structured-data.ts    # JSON-LD schemas (Restaurant, Person, Article)
+  utils.ts              # cn() helper, formatDate
+types/index.ts          # TypeScript interfaces
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ✍️ Adding Blog Posts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Create a new file in `content/blog/your-post-slug.mdx`:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```mdx
+---
+title: "Your Post Title"
+slug: "your-post-slug"
+excerpt: "150-160 character SEO description."
+date: "2025-01-15"
+author: "Anthony Marini"
+category: "Behind the Counter"
+tags: ["story", "charleston"]
+ogImage: "/og/your-post-slug.jpg"
+featured: false
+readTime: "4 min read"
+---
+
+Your content here...
+```
+
+Add the OG image (1200×630px JPG) to `public/og/`.
+
+---
+
+## 🎨 Design System
+
+**Palette:**
+- Light: `#FAF7F2` (parchment) / `#8B4513` (saddle brown primary) / `#C9A84C` (gold accent)
+- Dark: `#0E0C0A` (near-black) / `#C9A84C` (gold primary) / `#8B4513` (brown accent)
+
+**Fonts:** Playfair Display (display) + DM Sans (body) via Google Fonts
+
+**All tokens** live in `app/globals.css` as CSS variables. Never hardcode values.
+
+---
+
+## 🖼️ Favicons
+
+Generate a complete favicon set from your logo at [realfavicongenerator.net](https://realfavicongenerator.net) and place files in `public/icons/`:
+
+```
+favicon.ico
+favicon-16x16.png
+favicon-32x32.png
+apple-touch-icon.png
+android-chrome-192x192.png
+android-chrome-512x512.png
+```
+
+---
+
+## 📊 Analytics
+
+GTM is wired up in `app/layout.tsx`. Replace `GTM-XXXXXXX` in `.env.local` with your real container ID. All tracking (GA4, Meta Pixel, etc.) is managed through the GTM dashboard — no code changes needed.
+
+---
+
+## 🔍 SEO
+
+- LocalBusiness schema × 2 (Downtown CHS + Mount Pleasant)
+- Restaurant + AggregateRating schema
+- Person schema (Chef Anthony Marini)
+- Article schema on every blog post
+- Full OG + Twitter Card metadata on every page
+- `metadataBase` set — all relative image paths resolve to absolute URLs for WhatsApp/social previews
+- Dynamic sitemap at `/sitemap.xml`
+
+---
+
+## 📞 Contact & Links
+
+| | |
+|---|---|
+| Email | maelohospitality@gmail.com |
+| Instagram | @thepasschs |
+| Order Online (CHS) | toasttab.com/thepass-207a-st-philip-street |
+| Order Online (Mt.P) | order.toasttab.com/online/the-pass-mount-pleasant |
+| Italian Boy Reservations | resy.com (The Italian Boy After Dark) |
