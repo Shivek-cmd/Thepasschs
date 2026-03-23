@@ -29,7 +29,7 @@ export default function Story() {
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
-              <div className="grid-4col pt-8" style={{ borderTop: '1px solid var(--color-border)' }}>
+              <div className="stats-grid" style={{ borderTop: '1px solid var(--color-border)' }}>
                 {STATS.map((stat, i) => (
                   <div key={i} style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
                     <span className="heading-lg" style={{ color: 'var(--color-primary)', fontFamily: 'var(--font-display)' }}>

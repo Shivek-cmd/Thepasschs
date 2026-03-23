@@ -34,7 +34,7 @@ export default function VibeStrip() {
       aria-label="The Pass — Artisan Deli & Market, Charleston & Mount Pleasant"
     >
       <div className="flex">
-        <div className="marquee-track flex items-center gap-6 whitespace-nowrap">
+        <div className="marquee-track flex items-center whitespace-nowrap" style={{ gap: "1.5rem" }}>
           {doubled.map((item, i) => (
             <span
               key={i}
