@@ -24,7 +24,7 @@ export default function Testimonials() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 site-container">
         <AnimatedSection className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-px w-8" style={{ background: 'var(--color-accent)' }} />

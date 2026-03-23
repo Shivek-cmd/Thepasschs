@@ -38,7 +38,7 @@ export default function MaseratiMoment() {
 
       {/* Content */}
       <div
-        className="relative z-10 max-w-container mx-auto px-4 sm:px-6 lg:px-8 flex items-center"
+        className="relative z-10 site-container flex items-center"
         style={{ minHeight: '70vh' }}
       >
         <div className="max-w-2xl py-20">

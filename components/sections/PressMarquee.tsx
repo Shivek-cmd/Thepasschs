@@ -28,7 +28,7 @@ export default function PressMarquee() {
       style={{ background: 'var(--color-bg)' }}
       aria-labelledby="press-heading"
     >
-      <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+      <div className="site-container mb-12">
         <AnimatedSection className="text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-px w-8" style={{ background: 'var(--color-accent)' }} />
@@ -72,7 +72,7 @@ export default function PressMarquee() {
       </div>
 
       {/* Press logo grid */}
-      <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="site-container">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 md:gap-8">
           {PRESS_LOGOS.slice(0, 8).map((logo) => (
             <div

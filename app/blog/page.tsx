@@ -29,7 +29,7 @@ export default function BlogPage() {
     <div style={{ paddingTop: '4rem' }}>
       {/* Header */}
       <section className="py-20 md:py-28" style={{ background: 'var(--color-bg-secondary)' }}>
-        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="site-container">
           <AnimatedSection>
             <div className="flex items-center gap-3 mb-5">
               <div className="h-px w-8" style={{ background: 'var(--color-accent)' }} />
@@ -71,7 +71,7 @@ export default function BlogPage() {
       {/* Featured post */}
       {featured && (
         <section className="py-12 md:py-16" style={{ background: 'var(--color-bg)' }}>
-          <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="site-container">
             <AnimatedSection>
               <Link href={`/blog/${featured.slug}`} className="group block">
                 <div
@@ -129,7 +129,7 @@ export default function BlogPage() {
       {/* Post grid */}
       {rest.length > 0 && (
         <section className="py-12 pb-24 md:pb-32" style={{ background: 'var(--color-bg)' }}>
-          <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="site-container">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {rest.map((post, i) => (
                 <AnimatedSection key={post.slug} delay={i * 0.08}>

@@ -71,7 +71,7 @@ export default async function BlogPostPage({ params }: Props) {
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 0%, var(--color-bg-secondary) 80%)' }} />
           </div>
         )}
-        <div className="relative z-10 max-w-prose mx-auto px-4 sm:px-6 py-16 md:py-24">
+        <div className="site-container relative z-10 py-16 md:py-24">
           <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Stories', href: '/blog' }, { label: f.title, href: `/blog/${slug}` }]} />
           <span className="text-xs uppercase tracking-[0.18em] font-semibold mb-4 inline-block" style={{ color: 'var(--color-accent)' }}>
             {f.category}
@@ -98,7 +98,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Hero image */}
       {f.ogImage && (
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 -mt-8 relative z-10 mb-12">
+        <div className="site-container -mt-8 relative z-10 mb-12">
           <div className="rounded-2xl overflow-hidden border" style={{ aspectRatio: '16/9', borderColor: 'var(--color-border)', boxShadow: 'var(--shadow-xl)' }}>
             <Image src={f.ogImage} alt={f.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" priority />
           </div>
@@ -106,13 +106,13 @@ export default async function BlogPostPage({ params }: Props) {
       )}
 
       {/* Article body */}
-      <article className="max-w-prose mx-auto px-4 sm:px-6 pb-16 prose-italian">
+      <article className="site-container pb-16 prose-italian">
         <MDXRemote source={content} />
       </article>
 
       {/* Tags */}
       {f.tags && f.tags.length > 0 && (
-        <div className="max-w-prose mx-auto px-4 sm:px-6 pb-12">
+        <div className="site-container pb-12">
           <div className="flex flex-wrap gap-2 pt-8" style={{ borderTop: '1px solid var(--color-border)' }}>
             {f.tags.map(tag => (
               <Link
@@ -129,7 +129,7 @@ export default async function BlogPostPage({ params }: Props) {
       )}
 
       {/* Back / related */}
-      <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+      <div className="site-container pb-24">
         <div className="flex items-center justify-between mb-10 pt-8" style={{ borderTop: '1px solid var(--color-border)' }}>
           <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-medium transition-colors hover:text-primary" style={{ color: 'var(--color-text-muted)' }}>
             <ArrowLeft className="w-4 h-4" />

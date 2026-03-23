@@ -18,7 +18,7 @@ export default function Story() {
         aria-hidden="true"
       />
 
-      <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-20 items-center">
 
           {/* Text */}

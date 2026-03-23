@@ -23,7 +23,7 @@ export default function Locations() {
       style={{ background: 'var(--color-bg-secondary)' }}
       aria-labelledby="locations-heading"
     >
-      <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="site-container">
         <AnimatedSection className="mb-14 md:mb-16">
           <div className="flex items-center gap-3 mb-5">
             <div className="h-px w-8" style={{ background: 'var(--color-accent)' }} />

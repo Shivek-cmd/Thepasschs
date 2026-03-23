@@ -84,7 +84,7 @@ export default function CateringPage() {
             sizes="100vw"
           />
         </div>
-        <div className="relative z-10 max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 site-container">
           <AnimatedSection>
             <div className="flex items-center gap-3 mb-5">
               <div className="h-px w-8" style={{ background: 'var(--color-accent)' }} />
@@ -108,7 +108,7 @@ export default function CateringPage() {
 
       {/* Tiers */}
       <section className="py-20 md:py-28" style={{ background: 'var(--color-bg)' }}>
-        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="site-container">
           <AnimatedSection className="mb-14">
             <h2 className="font-display font-bold" style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: 'var(--color-text)' }}>
               Event Packages
@@ -211,7 +211,7 @@ export default function CateringPage() {
 
       {/* Inquiry form */}
       <section className="py-20 md:py-28 border-t" style={{ background: 'var(--color-bg-secondary)', borderColor: 'var(--color-border)' }}>
-        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="site-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <AnimatedSection>
               <div className="flex items-center gap-3 mb-5">

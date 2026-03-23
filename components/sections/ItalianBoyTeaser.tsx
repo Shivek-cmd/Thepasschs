@@ -45,7 +45,7 @@ export default function ItalianBoyTeaser() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 site-container">
         <div className="max-w-2xl mx-auto text-center">
           <AnimatedSection>
             <div className="flex items-center justify-center gap-3 mb-6">

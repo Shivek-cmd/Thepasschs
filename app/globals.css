@@ -181,3 +181,33 @@ h1, h2, h3, h4 {
 .prose-italian ul { padding-left: 1.5rem; margin-bottom: 1.25rem; }
 .prose-italian ul li { color: var(--color-text-muted); margin-bottom: 0.5rem; line-height: 1.7; }
 .prose-italian hr { border: none; border-top: 1px solid var(--color-border); margin: 2.5rem 0; }
+
+/* ─── LAYOUT UTILITIES ─── */
+.site-container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .site-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* ─── NAVBAR LEGIBILITY ─── */
+.navbar-text-light {
+  color: rgba(240, 235, 227, 0.92) !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}

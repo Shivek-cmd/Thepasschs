@@ -40,7 +40,7 @@ export default function Hero() {
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(to right, rgba(14,12,10,0.82) 0%, rgba(14,12,10,0.45) 60%, rgba(14,12,10,0.30) 100%)',
+            background: 'linear-gradient(to right, rgba(10,8,6,0.90) 0%, rgba(10,8,6,0.65) 55%, rgba(10,8,6,0.40) 100%)',
           }}
         />
         <div
@@ -75,7 +75,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center" style={{ minHeight: '100svh', paddingTop: '5rem' }}>
+      <div className="relative z-10 site-container flex flex-col justify-center" style={{ minHeight: '100svh', paddingTop: '5rem' }}>
         <div className="max-w-3xl">
 
           {/* Eyebrow */}

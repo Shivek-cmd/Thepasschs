@@ -92,7 +92,7 @@ export default function ItalianBoyPage() {
           <circle cx="300" cy="300" r="290" fill="none" stroke="rgba(201,168,76,0.06)" strokeWidth="1" />
         </svg>
 
-        <div className="relative z-10 max-w-container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center" style={{ minHeight: '90vh', paddingBottom: '4rem' }}>
+        <div className="relative z-10 site-container flex flex-col justify-center" style={{ minHeight: '90vh', paddingBottom: '4rem' }}>
           <div className="max-w-2xl">
             <AnimatedSection>
               <div className="flex items-center gap-3 mb-8">
@@ -163,7 +163,7 @@ export default function ItalianBoyPage() {
 
       {/* Courses */}
       <section className="py-24 md:py-32" style={{ background: '#0E0C0A' }} aria-labelledby="courses-heading">
-        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="site-container">
           <AnimatedSection className="mb-16">
             <div className="flex items-center gap-3 mb-5">
               <div className="h-px w-8" style={{ background: '#C9A84C' }} />
@@ -217,7 +217,7 @@ export default function ItalianBoyPage() {
 
       {/* Details */}
       <section id="details" className="py-24 md:py-32" style={{ background: '#161310', borderTop: '1px solid rgba(240,235,227,0.06)' }}>
-        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="site-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <AnimatedSection>
               <h2 className="font-display font-bold text-white mb-8" style={{ fontSize: 'clamp(1.8rem, 4vw, 2.6rem)' }}>
@@ -286,7 +286,7 @@ export default function ItalianBoyPage() {
 
       {/* Private events */}
       <section className="py-20 md:py-28 text-center" style={{ background: '#0E0C0A', borderTop: '1px solid rgba(240,235,227,0.06)' }}>
-        <div className="max-w-2xl mx-auto px-4">
+        <div className="site-container">
           <AnimatedSection>
             <h2 className="font-display font-bold text-white mb-4" style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)' }}>
               Want the whole room?

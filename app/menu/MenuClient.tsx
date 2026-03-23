@@ -82,7 +82,7 @@ export default function MenuPage() {
             sizes="100vw"
           />
         </div>
-        <div className="relative z-10 max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 site-container">
           <AnimatedSection>
             <div className="flex items-center gap-3 mb-5">
               <div className="h-px w-8" style={{ background: 'var(--color-accent)' }} />
@@ -111,7 +111,7 @@ export default function MenuPage() {
         className="sticky top-16 z-[100] border-b"
         style={{ background: 'var(--color-bg)', borderColor: 'var(--color-border)', backdropFilter: 'blur(12px)' }}
       >
-        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="site-container">
           <div className="flex gap-0 overflow-x-auto">
             {tabs.map(tab => (
               <button
@@ -133,7 +133,7 @@ export default function MenuPage() {
 
       {/* Menu content */}
       <section className="py-16 md:py-24" style={{ background: 'var(--color-bg)' }}>
-        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="site-container">
           <AnimatePresence mode="wait">
             {activeTab === 'Panino' && (
               <motion.div key="panino" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
@@ -273,7 +273,7 @@ export default function MenuPage() {
         className="py-16 md:py-20 text-center border-t"
         style={{ background: 'var(--color-bg-secondary)', borderColor: 'var(--color-border)' }}
       >
-        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="site-container">
           <h2 className="font-display font-bold mb-3" style={{ fontSize: '1.8rem', color: 'var(--color-text)' }}>
             Ready to eat?
           </h2>

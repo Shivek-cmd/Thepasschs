@@ -45,7 +45,7 @@ export default function SignatureDishes() {
       style={{ background: 'var(--color-bg)' }}
       aria-labelledby="signature-heading"
     >
-      <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="site-container">
 
         {/* Header */}
         <AnimatedSection className="mb-16 md:mb-20">
