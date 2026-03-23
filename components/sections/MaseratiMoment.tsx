@@ -41,7 +41,7 @@ export default function MaseratiMoment() {
         className="relative z-10 site-container flex items-center"
         style={{ minHeight: '70vh' }}
       >
-        <div className="max-w-2xl py-20">
+        <div className="max-w-2xl section-md">
           <AnimatedSection>
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-8" style={{ background: 'var(--color-accent)' }} />

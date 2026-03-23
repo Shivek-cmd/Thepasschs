@@ -70,7 +70,7 @@ export default function MenuPage() {
     <div style={{ paddingTop: '4rem' }}>
       {/* Hero */}
       <section
-        className="relative py-20 md:py-28 overflow-hidden"
+        className="section-lg relative overflow-hidden"
         style={{ background: 'var(--color-bg-secondary)' }}
       >
         <div className="absolute inset-0" aria-hidden="true">
@@ -132,7 +132,7 @@ export default function MenuPage() {
       </div>
 
       {/* Menu content */}
-      <section className="py-16 md:py-24" style={{ background: 'var(--color-bg)' }}>
+      <section className="section-md" style={{ background: 'var(--color-bg)' }}>
         <div className="site-container">
           <AnimatePresence mode="wait">
             {activeTab === 'Panino' && (
@@ -141,7 +141,7 @@ export default function MenuPage() {
                   variants={container}
                   initial="hidden"
                   animate="show"
-                  className="grid grid-cols-1 md:grid-cols-2 gap-5"
+                  className="grid-2col"
                 >
                   {sandwiches.map(s => (
                     <motion.div
@@ -189,7 +189,7 @@ export default function MenuPage() {
                 <p className="text-sm mb-8 italic" style={{ color: 'var(--color-text-subtle)' }}>
                   Make any sandwich into a salad for +$1. Pop-Pop Chop-Chop upgrade available for catering.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div className="grid-3col">
                   {salads.map(s => (
                     <div
                       key={s.name}
@@ -242,7 +242,7 @@ export default function MenuPage() {
 
             {activeTab === 'Bevande' && (
               <motion.div key="drinks" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid-2col">
                   {['Alcoholic', 'Non-Alcoholic'].map(cat => (
                     <div key={cat}>
                       <h3
@@ -270,7 +270,7 @@ export default function MenuPage() {
 
       {/* CTA */}
       <section
-        className="py-16 md:py-20 text-center border-t"
+        className="section-md text-center border-t"
         style={{ background: 'var(--color-bg-secondary)', borderColor: 'var(--color-border)' }}
       >
         <div className="site-container">

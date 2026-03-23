@@ -13,7 +13,7 @@ export default function Testimonials() {
 
   return (
     <section
-      className="py-24 md:py-32 relative overflow-hidden"
+      className="section-xl relative overflow-hidden"
       style={{ background: 'var(--color-bg)' }}
       aria-labelledby="reviews-heading"
     >

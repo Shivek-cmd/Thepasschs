@@ -142,7 +142,7 @@ export default async function BlogPostPage({ params }: Props) {
             <h2 className="font-display font-bold mb-8" style={{ fontSize: '1.5rem', color: 'var(--color-text)' }}>
               More Stories
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid-3col">
               {related.map(rp => (
                 <Link key={rp.slug} href={`/blog/${rp.slug}`} className="group block">
                   <div className="rounded-xl overflow-hidden border transition-all group-hover:border-accent/40" style={{ background: 'var(--color-card)', borderColor: 'var(--color-border)' }}>

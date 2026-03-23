@@ -8,7 +8,7 @@ import { SITE } from '@/constants'
 export default function ItalianBoyTeaser() {
   return (
     <section
-      className="relative w-full overflow-hidden py-24 md:py-32"
+      className="section-xl relative w-full overflow-hidden"
       style={{ background: 'var(--color-bg-elevated)' }}
       aria-labelledby="italianboy-heading"
     >
@@ -45,7 +45,7 @@ export default function ItalianBoyTeaser() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 site-container">
+      <div className="site-container relative z-10">
         <div className="max-w-2xl mx-auto text-center">
           <AnimatedSection>
             <div className="flex items-center justify-center gap-3 mb-6">

@@ -162,7 +162,7 @@ export default function ItalianBoyPage() {
       </section>
 
       {/* Courses */}
-      <section className="py-24 md:py-32" style={{ background: '#0E0C0A' }} aria-labelledby="courses-heading">
+      <section className="section-xl" style={{ background: '#0E0C0A' }} aria-labelledby="courses-heading">
         <div className="site-container">
           <AnimatedSection className="mb-16">
             <div className="flex items-center gap-3 mb-5">
@@ -176,7 +176,7 @@ export default function ItalianBoyPage() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid-3col">
             {courses.map((course, i) => (
               <AnimatedSection key={course.name} delay={i * 0.08}>
                 <div
@@ -216,9 +216,9 @@ export default function ItalianBoyPage() {
       </section>
 
       {/* Details */}
-      <section id="details" className="py-24 md:py-32" style={{ background: '#161310', borderTop: '1px solid rgba(240,235,227,0.06)' }}>
+      <section id="details" className="section-xl" style={{ background: '#161310', borderTop: '1px solid rgba(240,235,227,0.06)' }}>
         <div className="site-container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid-2col">
             <AnimatedSection>
               <h2 className="font-display font-bold text-white mb-8" style={{ fontSize: 'clamp(1.8rem, 4vw, 2.6rem)' }}>
                 Things to know<br />before you come.

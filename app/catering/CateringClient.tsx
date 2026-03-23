@@ -74,7 +74,7 @@ export default function CateringPage() {
   return (
     <div style={{ paddingTop: '4rem' }}>
       {/* Hero */}
-      <section className="relative py-20 md:py-28 overflow-hidden" style={{ background: 'var(--color-bg-secondary)' }}>
+      <section className="section-lg relative overflow-hidden" style={{ background: 'var(--color-bg-secondary)' }}>
         <div className="absolute inset-0" aria-hidden="true">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/51398e71e4b0052c92db718c/3f973a13-7ccb-40a1-88fc-e9f95c306698/web+header+catering.png"
@@ -107,7 +107,7 @@ export default function CateringPage() {
       </section>
 
       {/* Tiers */}
-      <section className="py-20 md:py-28" style={{ background: 'var(--color-bg)' }}>
+      <section className="section-lg" style={{ background: 'var(--color-bg)' }}>
         <div className="site-container">
           <AnimatedSection className="mb-14">
             <h2 className="font-display font-bold" style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: 'var(--color-text)' }}>
@@ -115,7 +115,7 @@ export default function CateringPage() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          <div className="grid-3col mb-16">
             {tiers.map((tier, i) => (
               <AnimatedSection key={tier.name} delay={i * 0.1}>
                 <div
@@ -210,9 +210,9 @@ export default function CateringPage() {
       </section>
 
       {/* Inquiry form */}
-      <section className="py-20 md:py-28 border-t" style={{ background: 'var(--color-bg-secondary)', borderColor: 'var(--color-border)' }}>
+      <section className="section-lg border-t" style={{ background: 'var(--color-bg-secondary)', borderColor: 'var(--color-border)' }}>
         <div className="site-container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div className="grid-2col">
             <AnimatedSection>
               <div className="flex items-center gap-3 mb-5">
                 <div className="h-px w-8" style={{ background: 'var(--color-accent)' }} />
