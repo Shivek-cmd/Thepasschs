@@ -98,7 +98,7 @@
   --text-h3:  clamp(1.3rem, 2vw, 1.6rem);       /* card headings */
   --text-h2:  clamp(1.8rem, 4vw, 2.8rem);       /* section headings */
   --text-h1:  clamp(2.2rem, 5vw, 3.5rem);       /* page hero headings */
-  --text-hero: clamp(3rem, 8vw, 6.5rem);        /* main hero */
+  --text-hero: clamp(2.5rem, 6vw, 5rem);        /* main hero */
 
   /* ─── LINE HEIGHTS ─── */
   --leading-tight:   1.1;

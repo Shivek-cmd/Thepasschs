@@ -43,7 +43,7 @@ export default function Story() {
           <AnimatedSection direction="right" className="relative">
             <div className="relative">
               <div className="card-base overflow-hidden" style={{ aspectRatio: '3/4' }}>
-                <Image src="https://images.squarespace-cdn.com/content/v1/60bd7353a93337235ec6e8d5/1643588112321-RSBUUZYOND3ZDIZIYKES/AnthonyMarini_web_thumb-300x300.jpg"
+                <Image src="/images/man.jpg"
                   alt="Chef Anthony Marini — Owner of The Pass" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 40vw" />
               </div>
               <div className="card-base" style={{ position: 'absolute', bottom: 'calc(var(--space-6) * -1)', left: 'calc(var(--space-6) * -1)', padding: 'var(--space-4)', maxWidth: '200px' }}>

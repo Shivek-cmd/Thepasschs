@@ -52,6 +52,7 @@ export const LOCATIONS = {
 
 export const NAV_LINKS = [
   { label: 'Menu', href: '/menu' },
+  { label: 'About', href: '/about' },
   { label: 'Catering', href: '/catering' },
   { label: 'The Italian Boy', href: '/the-italian-boy' },
   { label: 'Stories', href: '/blog' },

@@ -79,9 +79,9 @@ export default function ItalianBoyPage() {
             </AnimatedSection>
             <AnimatedSection delay={0.1}>
               <div style={{ marginBottom: 'var(--space-8)' }}>
-                <Image src="https://images.squarespace-cdn.com/content/v1/66c6970e298efb4cf210f0ff/536940a6-0eb4-43c0-a34c-e14e91497ccb/ItalianBoy_logo-11.png"
-                  alt="The Italian Boy After Dark" width={360} height={130} className="object-contain"
-                  style={{ filter: 'brightness(0) invert(1)', opacity: 0.92 }} />
+                <Image src="/images/ItalianBoy.jpg"
+                  alt="The Italian Boy After Dark" width={280} height={280} className="object-contain"
+                  style={{ borderRadius: '50%' }} />
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
