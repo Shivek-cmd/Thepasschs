@@ -1,0 +1,21 @@
+{
+  "name": "The Pass — Artisan Deli & Market",
+  "short_name": "The Pass",
+  "description": "Charleston's most beloved artisan deli. Handcrafted Italian-American sandwiches in Downtown Charleston & Mount Pleasant.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF7F2",
+  "theme_color": "#8B4513",
+  "icons": [
+    {
+      "src": "/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
