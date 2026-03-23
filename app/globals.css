@@ -600,3 +600,20 @@ button { cursor: pointer; font-family: inherit; }
 .section-divider { position: relative; width: 100%; display: flex; align-items: center; justify-content: center; padding: var(--space-2) 0; }
 .section-divider::before { content: ''; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: var(--color-border); }
 .section-divider span { position: relative; z-index: 1; width: 6px; height: 6px; border-radius: 50%; background: var(--color-accent); opacity: 0.5; box-shadow: 0 0 0 4px var(--color-bg); }
+
+/* ─── Blog featured card ─── */
+.featured-card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  .featured-card-grid {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+/* ─── Footer compact ─── */
+.footer-compact .section-lg {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+}

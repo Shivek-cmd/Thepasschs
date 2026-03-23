@@ -6,7 +6,7 @@ export default function Footer() {
   const year = new Date().getFullYear()
   return (
     <footer style={{ background: 'var(--color-bg-secondary)', borderTop: '1px solid var(--color-border)' }}>
-      <div className="site-container section-lg">
+      <div className="site-container section-md">
         <div className="grid-footer">
 
           {/* Brand */}
